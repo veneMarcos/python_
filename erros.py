@@ -7,3 +7,7 @@ try:
     arquivo.close()
 except (FileNotFoundError, TypeError) as erro:
     print('Deu error %s' % erro)
+finally:
+    if (arquivo is not None):
+        print('Fechando arquivo')
+        arquivo.close()
