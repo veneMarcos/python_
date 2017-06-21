@@ -19,7 +19,7 @@ class Perfil(object):
         return self.__curtidas
     
     @staticmethod
-    def gerar_perfis(self, nome_arquivo):
+    def gerar_perfis(nome_arquivo):
         arquivo = open(nome_arquivo, 'r')
         perfis = []
         for linha in arquivo:
